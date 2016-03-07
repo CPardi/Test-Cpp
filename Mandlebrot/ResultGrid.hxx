@@ -19,15 +19,5 @@ ResultGrid<resultType, calculator>::ResultGrid(Grid<double> grid, calculator cal
 template<class resultType, class calculator> 
 resultType ResultGrid<resultType, calculator>::Point(int i, int j)
 {
-	if (i < 0 || i >= XPoints)
-	{
-		throw gcnew IndexOutOfRangeException("Argument 'i=" + i + "' was out of range.");
-	}
-
-	if (j < 0 || j >= YPoints)
-	{
-		throw gcnew IndexOutOfRangeException("Argument 'j=" + j + "' was out of range.");
-	}
-
 	return _value[i][j];
 };

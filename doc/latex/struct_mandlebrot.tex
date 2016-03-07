@@ -1,0 +1,60 @@
+\hypertarget{struct_mandlebrot}{}\section{Mandlebrot Struct Reference}
+\label{struct_mandlebrot}\index{Mandlebrot@{Mandlebrot}}
+
+
+A functor to calculate the number of iterations before convergence of the mandlebrot sequence.  
+
+
+
+
+{\ttfamily \#include $<$Mandlebrot.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_mandlebrot_ab6d9fdcf93a8a8a396f28c8a352520a6}{Mandlebrot} (int max\+Iter)
+\begin{DoxyCompactList}\small\item\em Initializes a new \hyperlink{struct_mandlebrot}{Mandlebrot} instance. \end{DoxyCompactList}\item 
+int \hyperlink{struct_mandlebrot_a56d1e2fce182328322d3ebb1a78b9b90}{operator()} (std\+::complex$<$ double $>$ c)
+\begin{DoxyCompactList}\small\item\em Calculate the number of iterations for f(z\+\_\+n+1) = f(z\+\_\+n)$^\wedge$2 + c, while $\vert$f(z)$\vert$$<$=2, from a complex number c. \end{DoxyCompactList}\item 
+\hypertarget{struct_mandlebrot_a34f5e04a19852ac819d9be3b4057e0f3}{}int \hyperlink{struct_mandlebrot_a34f5e04a19852ac819d9be3b4057e0f3}{operator()} (double re\+C, double im\+C)\label{struct_mandlebrot_a34f5e04a19852ac819d9be3b4057e0f3}
+
+\begin{DoxyCompactList}\small\item\em Calculate the number of iterations for f(z\+\_\+n+1) = f(z\+\_\+n)$^\wedge$2 + c, while $\vert$f(z)$\vert$$<$=2, from the real and imaginary components of c. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A functor to calculate the number of iterations before convergence of the mandlebrot sequence. 
+
+A simple escape time algorithm as described on Wikipedia is used for calculations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_mandlebrot_ab6d9fdcf93a8a8a396f28c8a352520a6}{}\index{Mandlebrot@{Mandlebrot}!Mandlebrot@{Mandlebrot}}
+\index{Mandlebrot@{Mandlebrot}!Mandlebrot@{Mandlebrot}}
+\subsubsection[{Mandlebrot(int max\+Iter)}]{\setlength{\rightskip}{0pt plus 5cm}Mandlebrot\+::\+Mandlebrot (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Iter}
+\end{DoxyParamCaption}
+)}\label{struct_mandlebrot_ab6d9fdcf93a8a8a396f28c8a352520a6}
+
+
+Initializes a new \hyperlink{struct_mandlebrot}{Mandlebrot} instance. 
+
+Initialization consists of setting the maximun number of iterations. 
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_mandlebrot_a56d1e2fce182328322d3ebb1a78b9b90}{}\index{Mandlebrot@{Mandlebrot}!operator()@{operator()}}
+\index{operator()@{operator()}!Mandlebrot@{Mandlebrot}}
+\subsubsection[{operator()(std\+::complex$<$ double $>$ c)}]{\setlength{\rightskip}{0pt plus 5cm}int Mandlebrot\+::operator() (
+\begin{DoxyParamCaption}
+\item[{std\+::complex$<$ double $>$}]{c}
+\end{DoxyParamCaption}
+)}\label{struct_mandlebrot_a56d1e2fce182328322d3ebb1a78b9b90}
+
+
+Calculate the number of iterations for f(z\+\_\+n+1) = f(z\+\_\+n)$^\wedge$2 + c, while $\vert$f(z)$\vert$$<$=2, from a complex number c. 
+
+The initial 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mandlebrot/Mandlebrot.\+h\item 
+Mandlebrot/Mandlebrot.\+cpp\end{DoxyCompactItemize}

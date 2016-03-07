@@ -1,0 +1,83 @@
+\hypertarget{class_result_grid}{}\section{Result\+Grid$<$ result\+Type, calculator $>$ Class Template Reference}
+\label{class_result_grid}\index{Result\+Grid$<$ result\+Type, calculator $>$@{Result\+Grid$<$ result\+Type, calculator $>$}}
+
+
+This class hold the values of a function evaluated on a two dimensional grid.  
+
+
+
+
+{\ttfamily \#include $<$Result\+Grid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_result_grid_a9ba2da6df1f07b6a96250376ed89094d}{Result\+Grid} (\hyperlink{class_grid}{Grid}$<$ double $>$ grid, calculator calc)
+\item 
+result\+Type \hyperlink{class_result_grid_ac9bb7d6af4293ac18302e3e895f00081}{Point} (int i, int j)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_result_grid_ac20f44d6320de3f28e8b9041fa8a0a5e}{}int \hyperlink{class_result_grid_ac20f44d6320de3f28e8b9041fa8a0a5e}{X\+Points}\label{class_result_grid_ac20f44d6320de3f28e8b9041fa8a0a5e}
+
+\begin{DoxyCompactList}\small\item\em The number of points used to represent the x-\/axis. \end{DoxyCompactList}\item 
+\hypertarget{class_result_grid_af0886625e1133e4fe7d72c04a472ff67}{}int \hyperlink{class_result_grid_af0886625e1133e4fe7d72c04a472ff67}{Y\+Points}\label{class_result_grid_af0886625e1133e4fe7d72c04a472ff67}
+
+\begin{DoxyCompactList}\small\item\em The number of points used to represent the y-\/axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class result\+Type, class calculator$>$class Result\+Grid$<$ result\+Type, calculator $>$}
+
+This class hold the values of a function evaluated on a two dimensional grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Type} & The return type of the calculator functor. \\
+\hline
+{\em calculator} & T\+He type of the functor passed in the constructor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_result_grid_a9ba2da6df1f07b6a96250376ed89094d}{}\index{Result\+Grid@{Result\+Grid}!Result\+Grid@{Result\+Grid}}
+\index{Result\+Grid@{Result\+Grid}!Result\+Grid@{Result\+Grid}}
+\subsubsection[{Result\+Grid(\+Grid$<$ double $>$ grid, calculator calc)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class result\+Type , class calculator $>$ {\bf Result\+Grid}$<$ result\+Type, calculator $>$\+::{\bf Result\+Grid} (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid}$<$ double $>$}]{grid, }
+\item[{calculator}]{calc}
+\end{DoxyParamCaption}
+)}\label{class_result_grid_a9ba2da6df1f07b6a96250376ed89094d}
+Initializes a \hyperlink{class_result_grid}{Result\+Grid} instance. 
+\begin{DoxyParams}{Parameters}
+{\em grid} & The grid to evaluate the function at. \\
+\hline
+{\em calc} & The functor from which to calcuate function values. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_result_grid_ac9bb7d6af4293ac18302e3e895f00081}{}\index{Result\+Grid@{Result\+Grid}!Point@{Point}}
+\index{Point@{Point}!Result\+Grid@{Result\+Grid}}
+\subsubsection[{Point(int i, int j)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class result\+Type , class calculator $>$ result\+Type {\bf Result\+Grid}$<$ result\+Type, calculator $>$\+::Point (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\label{class_result_grid_ac9bb7d6af4293ac18302e3e895f00081}
+The value of a function at the indecies i and j. 
+\begin{DoxyParams}{Parameters}
+{\em i} & The x-\/axis index for the wanted value. \\
+\hline
+{\em j} & The y-\/axis index for the wanted value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mandlebrot/Result\+Grid.\+h\item 
+Mandlebrot/Result\+Grid.\+hxx\end{DoxyCompactItemize}

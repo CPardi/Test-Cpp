@@ -38,10 +38,10 @@
     <ClInclude Include="ResultGrid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ResultGrid.hxx">
+    <ClInclude Include="Grid.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Grid.hxx">
+    <ClInclude Include="ResultGrid.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
